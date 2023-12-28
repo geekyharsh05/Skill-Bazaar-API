@@ -1,8 +1,8 @@
 import express from 'express';
 import {
-  adminRegister,
-  adminLogin,
-  getAdmin,
+    adminRegister,
+    adminLogin,
+    getAdmin,
 } from '../controllers/index.controllers';
 import { authenticateJwt } from '../middleware/index.middleware';
 

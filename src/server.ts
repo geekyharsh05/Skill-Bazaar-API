@@ -1,9 +1,9 @@
 import express from 'express';
 import {
-  userRouter,
-  adminRouter,
-  courseRouter,
-  paymentRoute,
+    userRouter,
+    adminRouter,
+    courseRouter,
+    paymentRoute,
 } from './routes/index.route';
 import dotenv from 'dotenv';
 import cors from 'cors';
@@ -14,11 +14,11 @@ dbConnect();
 const PORT = process.env.PORT ?? 4000;
 
 declare global {
-  namespace Express {
-    interface Request {
-      userId: string | undefined;
+    namespace Express {
+        interface Request {
+            userId: string | undefined;
+        }
     }
-  }
 }
 
 const app = express();
@@ -32,5 +32,5 @@ app.use('/course', courseRouter);
 app.use('/payment', paymentRoute);
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+    console.log(`Server is listening on port ${PORT}`);
 });

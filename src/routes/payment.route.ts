@@ -1,8 +1,8 @@
 import express from 'express';
 import {
-  makePayment,
-  getAllPaidCourses,
-  hasUserPurchase,
+    makePayment,
+    getAllPaidCourses,
+    hasUserPurchase,
 } from '../controllers/index.controllers';
 import { authenticateJwt } from '../middleware/index.middleware';
 

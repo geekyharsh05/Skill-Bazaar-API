@@ -1,12 +1,12 @@
 import express from 'express';
 import {
-  createCourse,
-  getAllCourses,
-  getCourse,
-  updateCourse,
-  deleteCourse,
-  postReview,
-  getReview,
+    createCourse,
+    getAllCourses,
+    getCourse,
+    updateCourse,
+    deleteCourse,
+    postReview,
+    getReview,
 } from '../controllers/index.controllers';
 import { authenticateJwt } from '../middleware/index.middleware';
 
